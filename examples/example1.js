@@ -31,30 +31,31 @@
     ask = require('../').ask,
     util = require('util'),
 
-  questions = {};
-  questions[1] = {text: '#1: '};
-  questions.name = {text: 'What is you name?\n'};
-  questions.required = {text: 'Required: ', required: true};
-  questions.default = {text: 'Default: ', default: 'something'};
-  questions.withOptions = {
-    text: 'Choose one: ',
-    options: [
-      'Red',
-      'Green',
-      'Blue'
-    ],
-    default: 'GREEN'
-  };
-  questions.travel = {
-    text: 'Would you like to fly to {{{options}}}? ',
-    optionsSeparator: ' or ',
-    options: [
-      'Paris',
-      'San Francisco'
-    ]
-  };
-
-  ask(questions, {withOptions: 'Yellow'}, function (err, answers) {
+    questions = {
+      name: {
+        text: 'Hello there!\nWhat\'s you name? ',
+        required: true
+      },
+      age: {
+        text: 'How old are you?'
+      },
+      travel: {
+        text: 'Would you rather live in {{{options}}}? ',
+        optionsSeparator: ' or ',
+        options: [
+          'Paris',
+          'San Francisco'
+        ]
+      },
+      like: {
+        text: 'Do you like askr?',
+        default: 'yes',
+        options: ['yes', 'no']
+      },
+      f: {}
+    };
+  
+  ask(questions, {age: 24}, function (err, answers) {
     console.log(util.inspect(answers));
   });
 }());

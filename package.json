@@ -2,7 +2,7 @@
   "name": "askr",
   "description": "",
   "author": "Romain Francez <me@romainf.fr> (http://romainf.fr)",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "license": "GPL-3.0",
   "main": "./lib/askr.js",
   "devDependencies": {
