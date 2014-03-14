@@ -1,8 +1,8 @@
 {
   "name": "askr",
-  "description": "",
+  "description": "A simple utility to ask questions on the command line with node.js.",
   "author": "Romain Francez <me@romainf.fr> (http://romainf.fr)",
-  "version": "0.2.4",
+  "version": "0.2.6",
   "license": "GPL-3.0",
   "main": "./lib/askr.js",
   "devDependencies": {
