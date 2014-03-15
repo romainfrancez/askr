@@ -101,7 +101,7 @@ The placement of the default can be changed using `{{{default}}}` in the questio
 
 Then this is the default question template when options and default are provided
 ```javascript
-'Question body ({{{options}}) [{{{default}}}] ';
+'Question body ({{{options}}}) [{{{default}}}] ';
 ```
 
 ### Already answered questions
